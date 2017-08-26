@@ -4,6 +4,11 @@ from .api_config import ApiConfig
 from .message import Message
 import warnings
 import copy
+import csv
+
+f=open("US EQIUTY.csv",'r')
+csvreader=csv.reader(f)
+usequity=list(csvreader)
 
 
 def get_table(datatable_code, **options):
