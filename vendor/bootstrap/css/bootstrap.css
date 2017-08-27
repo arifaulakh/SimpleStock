@@ -642,8 +642,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 0px;
+  margin-left: 150px;
 }
 
 .no-gutters {
@@ -3764,8 +3764,8 @@ tbody.collapse.show {
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 0px;
+    margin-left: 250px;
   }
   .card-deck .card {
     display: -ms-flexbox;
