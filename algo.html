@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SimpleStock</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+      
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#stocksymbol").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+
+
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+
+      <div class="card card-register mx-auto mt-5">
+        <div class="card-header" style="text-align: center">
+          SimpleStock: Buy or Sell
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="stocksymbol">Stock Symbol</label>
+              <input type="stocksymbol" class="form-control" id="stocksymbol" aria-describedby="stocksymbol" placeholder="What is the given name or unique ticker symbol of the stock?">
+            </div>
+            <div class="form-group">
+              <label for="peratio">P/E Ratio</label>
+              <input type="peratio" class="form-control" id="peratio" aria-describedby="peratio" placeholder="What is the P/E ratio of the given stock?">
+                
+            </div>
+            <div class="form-group">
+              <label for="marketcap">Market Capitalization</label>
+              <input type="marketcap" class="form-control" id="marketcap" aria-describedby="marketcap" placeholder="What is the market capitalization of the given stock?">
+            </div>
+            <div class="form-group">
+              <label for="beta">Beta</label>
+              <input type="beta" class="form-control" id="beta" aria-describedby="beta" placeholder="What is the beta of the given stock?">
+            </div>
+            <div class="form-group">
+              <label for="yield">Yield</label>
+              <input type="yield" class="form-control" id="yield" aria-describedby="yield" placeholder="What is the percent dividend yield of the given stock?">
+            </div>
+            <div class="form-group">
+              <label for="volume">Volume</label>
+              <input type="volume" class="form-control" id="volume" aria-describedby="volume" placeholder="What is the daily trading volume of the given stock?">
+            </div>
+            <a class="btn btn-primary btn-block" href="login.html" id=btnclick>Find Signal</a>
+              <script type="text/javascript">
+                  document.getElementById(btnclick).onclick=clickEvent;
+                  
+                  function clickEvent() {
+                      alert('Buy')
+                  };
+              </script>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src=SimpleStock.js></script>
+
+  </body>
+
+</html>
